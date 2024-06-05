@@ -1,0 +1,72 @@
+
+body{
+    margin:0;
+    height: 100vh;
+    background-color: black;
+    background-image: url(imag1.jpg);
+    background-repeat: no-repeat;
+    background-size: 1400px 1300px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: blueviolet;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: chartreuse;
+  }
+  
+  input[type="text"],
+  input[type="checkbox"],
+  textarea {
+    width: 50%;
+    padding: 0.5rem;
+    background-color: aqua;
+    border: 1px solid #bf1668;
+    border-radius: 4px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #bf1668;
+    border-radius: 4px;
+  }
+  
+  textarea {
+    resize: horizontal;
+  }
+  
+
+span{
+    background: url("heart.png") ;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    pointer-events:none;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation :animate 6s linear;
+    
+}
+@keyframes animate{
+    0%{
+        transform:translate(-59%,-50%);
+        opacity:1;
+        filter:hue-roatet(0);
+    }
+    100%{
+        transform:translate(-50%,-5000%);
+        opacity:0;
+        filter: hue-rotate(720deg);
+    }
+}
